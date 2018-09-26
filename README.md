@@ -1,7 +1,6 @@
 dynamic.io
 ==========
-[![Build Status](https://travis-ci.org/keenlok/dynamic.io.svg?branch=master)](https://travis-ci
-.org/PencilCode/dynamic.io)
+[![Build Status](https://travis-ci.org/keenlok/dynamic.io.svg?branch=master)](https://travis-ci.org/keenlok/dynamic.io)
 [![NPM version](https://badge.fury.io/js/dynamic.io.svg)](http://badge.fury.io/js/dynamic.io)
 
 dynamic.io is a subclass of the socket.io server that
