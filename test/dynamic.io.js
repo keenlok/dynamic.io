@@ -1,6 +1,6 @@
 
 var http = require('http').Server;
-var io = require('..');
+var io = require('..').DynamicServer;
 var join = require('path').join;
 var ioc = require('socket.io-client');
 var request = require('supertest');
@@ -30,6 +30,7 @@ describe('dynamic.io', function(){
       var sio = io(srv, { host: true });
       var total = 1;
       var basename = '';
+      // For some reason cant reference the method in index.js
       sio.setupNamespace(/.*first/, function(nsp) {
         expect(nsp.fullname()).to.be(basename + '/first');
         --total || done();

@@ -54,7 +54,12 @@ function matchPattern(pattern, str) {
   }
 }
 
-// Override constructor, to add new fields and options.
+/**
+ * Override constructor, to add new fields and options.
+ *
+ * @param {http.Server|Number|Object} http server, port or options
+ * @param {Object} options
+ */
 function DynamicServer(srv, opts) {
   if (!(this instanceof DynamicServer)) return new DynamicServer(srv, opts);
   var options = opts;
